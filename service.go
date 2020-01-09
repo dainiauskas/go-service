@@ -9,6 +9,7 @@ import (
 
 var logger srv.Logger
 
+// Program structure for service
 type Program struct {
 	Name        string
 	DisplayName string
@@ -16,8 +17,15 @@ type Program struct {
 	CallBack    func()
 }
 
+// Start using for service start
 func (p *Program) Start(s srv.Service) error {
 	go p.run()
+	return nil
+}
+
+// Stop function for stop service
+func (p *Program) Stop(s srv.Service) error {
+	log.Info("Service Stopping!")
 	return nil
 }
 
@@ -29,11 +37,7 @@ func (p *Program) run() error {
 	return nil
 }
 
-func (p *Program) Stop(s srv.Service) error {
-	log.Info("Service Stopping!")
-	return nil
-}
-
+// New creating and return Program structure
 func New(name, display, desc string) *Program {
 	return &Program{
 		Name:        name,
@@ -42,10 +46,12 @@ func New(name, display, desc string) *Program {
 	}
 }
 
+// SetCb for setting CallBack
 func (p *Program) SetCb(cb func()) {
 	p.CallBack = cb
 }
 
+// Controller function using for controll service
 func (p *Program) Controller(param string) error {
 	svcConfig := &srv.Config{
 		Name:        p.Name,
