@@ -24,4 +24,11 @@ srv := service.New("Name", "Display", "Description")
 srv.SetCb(func() {
   fmt.Println("Hello service")
 })
+
+// Controll
+srv.Controller("install")
+srv.Controller("uninstall")
+srv.Controller("start")
+srv.Controller("stop")
+srv.Controller("run")
 ```
