@@ -19,6 +19,7 @@ type Program struct {
 
 // Start using for service start
 func (p *Program) Start(s srv.Service) error {
+	log.Info("Service starting on %v platform.", srv.Platform())
 	go p.run()
 	return nil
 }
