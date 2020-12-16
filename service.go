@@ -3,7 +3,7 @@ package service
 import (
 	"fmt"
 
-	"bitbucket.org/butenta/pkg-log"
+	log "bitbucket.org/butenta/pkg-log"
 	srv "github.com/kardianos/service"
 )
 
@@ -92,6 +92,17 @@ func (p *Program) Controller(param string) error {
 		}
 		fmt.Printf("Service \"%s\" stopped.\n", svcConfig.DisplayName)
 	case "start":
+		executionError = s.Start()
+		if executionError != nil {
+			return fmt.Errorf("Failed to start \"%s\" : %s", svcConfig.DisplayName, executionError)
+		}
+		fmt.Printf("Service \"%s\" started.\n", svcConfig.DisplayName)
+	case "restart":
+		executionError = s.Stop()
+		if err != nil {
+			return fmt.Errorf("Failed to stop: %s", executionError)
+		}
+		fmt.Printf("Service \"%s\" stopped.\n", svcConfig.DisplayName)
 		executionError = s.Start()
 		if executionError != nil {
 			return fmt.Errorf("Failed to start \"%s\" : %s", svcConfig.DisplayName, executionError)
