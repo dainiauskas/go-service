@@ -72,6 +72,7 @@ func (p *Program) Controller(param string) error {
 	}
 
 	var executionError error
+
 	switch param {
 	case "install":
 		executionError = s.Install()
@@ -98,16 +99,11 @@ func (p *Program) Controller(param string) error {
 		}
 		fmt.Printf("Service \"%s\" started.\n", svcConfig.DisplayName)
 	case "restart":
-		executionError = s.Stop()
+		executionError = s.Restart()
 		if err != nil {
 			return fmt.Errorf("Failed to stop: %s", executionError)
 		}
-		fmt.Printf("Service \"%s\" stopped.\n", svcConfig.DisplayName)
-		executionError = s.Start()
-		if executionError != nil {
-			return fmt.Errorf("Failed to start \"%s\" : %s", svcConfig.DisplayName, executionError)
-		}
-		fmt.Printf("Service \"%s\" started.\n", svcConfig.DisplayName)
+		fmt.Printf("Service \"%s\" restarted.\n", svcConfig.DisplayName)
 	default:
 		executionError = s.Run()
 		if executionError != nil {
