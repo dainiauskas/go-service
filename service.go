@@ -2,6 +2,8 @@ package service
 
 import (
 	"fmt"
+	"os"
+	"path/filepath"
 
 	log "bitbucket.org/butenta/pkg-log"
 	srv "github.com/kardianos/service"
@@ -54,12 +56,9 @@ func (p *Program) SetCb(cb func()) {
 
 // Controller function using for controll service
 func (p *Program) Controller(param string) error {
-	svcConfig := &srv.Config{
-		Name:        p.Name,
-		DisplayName: p.DisplayName,
-		Description: p.Description,
-		Arguments:   []string{"service"},
-	}
+	path, _ := filepath.Abs(os.Args[0])
+
+	svcConfig := p.getConfig(path)
 
 	s, err := srv.New(p, svcConfig)
 	if err != nil {
