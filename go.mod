@@ -1,4 +1,4 @@
-module bitbucket.org/butenta/pkg-service
+module github.com/ButentaLT/pkg-service
 
 go 1.15
 
