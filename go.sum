@@ -1,10 +1,6 @@
-bitbucket.org/butenta/pkg-log v0.0.0-20200109054207-cee8abcd4519 h1:nDvZ8QmBn4dIGpJiiI9O2ArvS7XfmAn9MmVMeXlVVQc=
-bitbucket.org/butenta/pkg-log v0.0.0-20200109054207-cee8abcd4519/go.mod h1:pPBZqTxJFvTPYvlqlJAih+m6+BhMVdaTTDIjw66y9VI=
-github.com/kardianos/service v1.0.0 h1:HgQS3mFfOlyntWX8Oke98JcJLqt1DBcHR4kxShpYef0=
-github.com/kardianos/service v1.0.0/go.mod h1:8CzDhVuCuugtsHyZoTvsOBuvonN/UDBvl0kH+BUxvbo=
+github.com/ButentaLT/pkg-log v1.0.0 h1:8DEfSJ8HZs9r1ZgNNdchwx8gvyiQ6mKdt5ZzpMQroME=
+github.com/ButentaLT/pkg-log v1.0.0/go.mod h1:/f3UUtR0B4+bRnpoOn4jJmWIFg1wRbs+8ZI7izsCCqY=
 github.com/kardianos/service v1.2.0 h1:bGuZ/epo3vrt8IPC7mnKQolqFeYJb7Cs8Rk4PSOBB/g=
 github.com/kardianos/service v1.2.0/go.mod h1:CIMRFEJVL+0DS1a3Nx06NaMn4Dz63Ng6O7dl0qH0zVM=
-golang.org/x/sys v0.0.0-20190204203706-41f3e6584952 h1:FDfvYgoVsA7TTZSbgiqjAbfPbK47CNHdWl3h/PJtii0=
-golang.org/x/sys v0.0.0-20190204203706-41f3e6584952/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
 golang.org/x/sys v0.0.0-20201015000850-e3ed0017c211 h1:9UQO31fZ+0aKQOFldThf7BKPMJTiBfWycGh/u3UoO88=
 golang.org/x/sys v0.0.0-20201015000850-e3ed0017c211/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=

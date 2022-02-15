@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	log "bitbucket.org/butenta/pkg-log"
+	log "github.com/ButentaLT/pkg-log"
 	srv "github.com/kardianos/service"
 )
 
