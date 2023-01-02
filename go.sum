@@ -1,5 +1,5 @@
-github.com/ButentaLT/pkg-log v1.1.5 h1:pRxQxLENWRf/yWVuC/GySAyVWOLpg1Hih5gE9MdOXao=
-github.com/ButentaLT/pkg-log v1.1.5/go.mod h1:/f3UUtR0B4+bRnpoOn4jJmWIFg1wRbs+8ZI7izsCCqY=
+github.com/ButentaLT/pkg-log v1.2.3 h1:WqfrvAhUbjcT1pgAIwpc85JnOJt54TYbwNxFWBRHzNQ=
+github.com/ButentaLT/pkg-log v1.2.3/go.mod h1:/f3UUtR0B4+bRnpoOn4jJmWIFg1wRbs+8ZI7izsCCqY=
 github.com/kardianos/service v1.2.2 h1:ZvePhAHfvo0A7Mftk/tEzqEZ7Q4lgnR8sGz4xu1YX60=
 github.com/kardianos/service v1.2.2/go.mod h1:CIMRFEJVL+0DS1a3Nx06NaMn4Dz63Ng6O7dl0qH0zVM=
 golang.org/x/sys v0.0.0-20201015000850-e3ed0017c211 h1:9UQO31fZ+0aKQOFldThf7BKPMJTiBfWycGh/u3UoO88=
