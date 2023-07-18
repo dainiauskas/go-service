@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	log "github.com/ButentaLT/pkg-log"
+	log "github.com/dainiauskas/go-log"
 	srv "github.com/kardianos/service"
 )
 
